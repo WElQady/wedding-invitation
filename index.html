@@ -3,53 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fffaf2">
+  <meta name="theme-color" content="#241d19">
+  <meta name="description" content="دعوة عقد قران وليد مجدي القاضي ومنة الله طارق الدهان">
   <title>دعوة عقد قران — وليد ومنة الله</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
   <style>
-    :root { color-scheme: light; --gold:#a8792f; --ink:#302719; --muted:#796f60; --cream:#fffaf2; --card:#fff; }
+    :root { color-scheme:light; --gold:#d8b878; --ink:#302719; --muted:#756b5e; --cream:#fffaf2; }
     * { box-sizing:border-box; }
-    body { margin:0; min-height:100vh; padding:24px 14px; color:var(--ink); background:radial-gradient(ellipse at top,#f5e6ca 0,transparent 55%),var(--cream); font-family:'Tajawal','Cairo',sans-serif; }
-    main { width:min(100%,560px); margin:auto; }
-    .card { margin:0 0 18px; padding:clamp(22px,6vw,36px); border:1px solid #dfc99e; border-radius:26px; background:rgba(255,255,255,.92); box-shadow:0 16px 42px #80632a18; text-align:center; }
-    .eyebrow { display:inline-block; padding:5px 14px; border:1px solid #e6d5b5; border-radius:999px; color:var(--gold); font-weight:800; font-size:14px; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; min-height:100vh; color:var(--ink); background:#241d19 url('./image_1430a0d0.jpg') center/cover fixed; font-family:'Tajawal','Cairo',sans-serif; }
+    body::before { content:""; position:fixed; inset:0; z-index:-1; background:rgba(30,23,17,.63); }
+    main { width:min(100% - 28px,620px); margin:auto; padding:24px 0 12px; }
+    .card { position:relative; overflow:hidden; margin:0 0 18px; padding:clamp(24px,6vw,40px); border:1px solid #e6d3ad; border-radius:26px; background:rgba(255,250,242,.96); box-shadow:0 18px 50px #100b0860; text-align:center; }
+    .cover { position:fixed; inset:0; z-index:5; display:grid; place-items:center; padding:20px; color:#fff; text-align:center; background:linear-gradient(#1b151399,#1b1513bb),url('./image_1430a0d0.jpg') center/cover; transition:opacity .7s ease,visibility .7s ease; }
+    .cover.is-hidden { opacity:0; visibility:hidden; pointer-events:none; }
+    .cover-content { width:min(100%,520px); padding:36px 22px; border:1px solid #ead8b2aa; border-radius:28px; background:#20181370; box-shadow:0 18px 60px #0006; backdrop-filter:blur(4px); }
+    .cover .eyebrow { color:#f0d9a8; border-color:#f0d9a877; }
+    .cover h1 { margin:20px 0 8px; font-size:clamp(29px,8vw,46px); line-height:1.55; }
+    .cover p { color:#fff6e8; }
+    .eyebrow { display:inline-block; padding:5px 14px; border:1px solid #e6d5b5; border-radius:999px; color:#9a702c; font-weight:800; font-size:14px; }
     h1 { margin:16px 0 10px; font-size:clamp(27px,7vw,40px); line-height:1.55; }
     h2 { margin:0 0 8px; font-size:26px; }
-    p { line-height:1.8; }
-    .details { color:var(--gold); font-weight:800; font-size:20px; }
+    p { line-height:1.85; }
+    .details { color:#a8792f; font-weight:800; font-size:20px; }
     .muted { color:var(--muted); }
-    .map { display:inline-block; margin-top:10px; padding:10px 18px; border-radius:14px; color:white; background:var(--gold); text-decoration:none; font-weight:800; }
+    .map,.action { display:inline-block; margin-top:10px; padding:11px 20px; border:0; border-radius:14px; color:white; background:#9b702f; text-decoration:none; font:inherit; font-weight:800; cursor:pointer; }
+    .action { background:var(--gold); color:#2c2114; }
+    .map:hover,.action:hover { filter:brightness(.94); }
+    .music-toggle { position:fixed; z-index:3; left:16px; bottom:16px; display:flex; align-items:center; gap:8px; padding:11px 15px; border:1px solid #ffffff70; border-radius:999px; color:#fff; background:#302719e8; font:inherit; font-weight:700; cursor:pointer; box-shadow:0 6px 20px #0004; }
+    .music-toggle[hidden] { display:none; }
+    .timeline { margin:20px 0 0; padding:0; list-style:none; text-align:right; }
+    .timeline li { padding:12px 16px; border-right:3px solid #d6b77c; background:#f8f2e7; }
+    .timeline li + li { margin-top:8px; }
+    .timeline strong { color:#946a2c; }
     form { text-align:right; }
-    label, legend { display:block; margin:15px 0 7px; font-weight:800; }
-    input[type=text], textarea { width:100%; padding:12px 13px; border:1px solid #dfd1b7; border-radius:12px; background:#fffdf9; color:var(--ink); font:inherit; }
+    label,legend { display:block; margin:15px 0 7px; font-weight:800; }
+    input[type=text],textarea { width:100%; padding:12px 13px; border:1px solid #dfd1b7; border-radius:12px; background:#fffdf9; color:var(--ink); font:inherit; }
     textarea { resize:vertical; }
     fieldset { margin:14px 0; padding:0; border:0; }
     .choices { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
     .choice { display:flex; align-items:center; justify-content:center; gap:8px; padding:13px 8px; border:1px solid #dfd1b7; border-radius:12px; background:#fffdf9; font-weight:700; cursor:pointer; }
-    button { width:100%; margin-top:17px; padding:13px; border:0; border-radius:14px; background:var(--gold); color:white; font:inherit; font-weight:800; cursor:pointer; }
-    button:hover,.map:hover { filter:brightness(.94); }
+    form button { width:100%; margin-top:17px; padding:13px; border:0; border-radius:14px; background:#9b702f; color:white; font:inherit; font-weight:800; cursor:pointer; }
     #thanks { margin-top:16px; padding:14px; border-radius:12px; background:#f7f0e3; font-weight:700; }
-    .notice { margin:12px 0 0; font-size:13px; }
-    footer { padding:8px 0 24px; text-align:center; color:var(--muted); }
+    footer { padding:8px 0 24px; color:#fff4e2; text-align:center; text-shadow:0 2px 8px #000; }
+    @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; transition:none !important; } }
   </style>
 </head>
 <body>
+  <section class="cover" id="cover" aria-label="غلاف الدعوة">
+    <div class="cover-content">
+      <span class="eyebrow">بسم الله الرحمن الرحيم</span>
+      <h1>وليد مجدي القاضي<br><span class="details" style="color:#f0d9a8">&amp;</span><br>منة الله طارق الدهان</h1>
+      <p>يسعدنا دعوتكم لمشاركتنا فرحة عقد القران</p>
+      <button class="action" id="open-invitation" type="button">افتح الدعوة 🤍</button>
+      <p style="font-size:14px;margin-bottom:0">اضغط لفتح الدعوة وتشغيل الموسيقى</p>
+    </div>
+  </section>
+
+  <audio id="wedding-audio" loop preload="auto">
+    <source src="./%D9%86%D8%B4%D9%8A%D8%AF%20%D8%A7%D9%84%D8%B2%D9%81%D8%A7%D9%81%20-%20%D8%B7%D9%84%D9%8A%20%D8%A8%D8%A7%D9%84%D8%A7%D8%A8%D9%8A%D8%B6%20-%20%D9%85%D9%88%D9%82%D8%B9%20%D9%85%D8%B7%D8%A8%D8%B9%D9%87.mp3" type="audio/mpeg">
+  </audio>
+  <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" hidden>♫ <span>تشغيل الموسيقى</span></button>
+
   <main>
     <section class="card" aria-labelledby="invitation-title">
       <span class="eyebrow">بسم الله الرحمن الرحيم</span>
       <p class="eyebrow">دعوة عقد قران</p>
       <h1 id="invitation-title">وليد مجدي القاضي<br><span class="details">&amp;</span><br>منة الله طارق الدهان</h1>
       <p class="details">٢٨ نوفمبر ٢٠٢٦ • الساعة ٦:٤٥ مساءً</p>
-      <p>يسعدنا تشريفكم ومشاركتنا فرحة عقد القران</p>
+      <p>بارك الله لهما وبارك عليهما وجمع بينهما في خير • يسعدنا تشريفكم ومشاركتنا فرحة عقد القران</p>
+      <p class="details" id="countdown" aria-live="polite"></p>
     </section>
 
     <section class="card" aria-labelledby="place-title">
       <span class="eyebrow">موقع الاحتفال</span>
       <h2 id="place-title">مسجد حسن الشربتلي</h2>
       <p class="muted">شارع خالد بن الوليد • التجمع الخامس، القاهرة الجديدة</p>
+      <p class="muted">٣٠٫٠٢٥٨° شمالًا، ٣١٫٤٢٥٦° شرقًا</p>
       <a class="map" href="https://maps.app.goo.gl/jKrFE9t2Y7Qk9YFE6" target="_blank" rel="noopener noreferrer">فتح الموقع على الخريطة ↗</a>
+    </section>
+
+    <section class="card" aria-labelledby="schedule-title">
+      <span class="eyebrow">موعدنا</span>
+      <h2 id="schedule-title">برنامج الأمسية</h2>
+      <ul class="timeline">
+        <li><strong>٦:٤٥ مساءً</strong> | استقبال الضيوف والترحيب بالمعازيم</li>
+        <li><strong>٧:١٥ مساءً</strong> | مراسم عقد القران والدعاء للعروسين</li>
+        <li><strong>٧:٤٥ مساءً</strong> | التقاط الصور التذكارية وتقديم التهاني</li>
+        <li><strong>٨:١٥ مساءً</strong> | الضيافة والاحتفال الختامي حتى ٨:٣٠ مساءً</li>
+      </ul>
     </section>
 
     <section class="card" aria-labelledby="rsvp-title">
@@ -70,11 +114,59 @@
         <button type="submit">إرسال الرد</button>
       </form>
       <div id="thanks" role="status" aria-live="polite" hidden>شكراً لردك ومشاركتك فرحتنا 🤍</div>
-      <p class="muted notice">ملاحظة: لا يمكن تعديل بيانات الدعوة من هذه الصفحة. إرسال الردود إلى صاحب الدعوة يحتاج ربط النموذج بخدمة استقبال ردود.</p>
+      <p class="muted" style="font-size:13px">تأكيد الحضور هنا للعرض فقط، ولن يصل الرد إلينا ما لم يتم ربط نموذج الإرسال بخدمة استقبال الردود.</p>
     </section>
+    <section class="card"><p>وجودكم معنا ودعواتكم الطيبة أجمل هدية لنا. نسعد بأن تجمعنا بكم هذه اللحظة المباركة، ونرجو أن تبقى ذكرى دافئة في قلوبنا جميعًا.</p></section>
     <footer>ننتظركم بكل حب 🤍</footer>
   </main>
+
   <script>
+    const audio = document.getElementById('wedding-audio');
+    const musicButton = document.getElementById('music-toggle');
+    const musicLabel = musicButton.querySelector('span');
+
+    function updateMusicButton(isPlaying) {
+      musicButton.setAttribute('aria-pressed', String(isPlaying));
+      musicLabel.textContent = isPlaying ? 'إيقاف الموسيقى' : 'تشغيل الموسيقى';
+    }
+
+    document.getElementById('open-invitation').addEventListener('click', async () => {
+      document.getElementById('cover').classList.add('is-hidden');
+      musicButton.hidden = false;
+      try {
+        await audio.play();
+        updateMusicButton(true);
+      } catch (error) {
+        updateMusicButton(false);
+        musicLabel.textContent = 'اضغط لتشغيل الموسيقى';
+      }
+    });
+
+    musicButton.addEventListener('click', async () => {
+      if (audio.paused) {
+        try { await audio.play(); updateMusicButton(true); }
+        catch (error) { updateMusicButton(false); }
+      } else {
+        audio.pause();
+        updateMusicButton(false);
+      }
+    });
+    audio.addEventListener('pause', () => updateMusicButton(false));
+    audio.addEventListener('play', () => updateMusicButton(true));
+
+    const eventDate = new Date('2026-11-28T18:45:00+02:00');
+    const countdown = document.getElementById('countdown');
+    function updateCountdown() {
+      const remaining = eventDate.getTime() - Date.now();
+      if (remaining <= 0) { countdown.textContent = 'نسعد بوجودكم معنا اليوم 🤍'; return; }
+      const days = Math.floor(remaining / 86400000);
+      const hours = Math.floor((remaining % 86400000) / 3600000);
+      const minutes = Math.floor((remaining % 3600000) / 60000);
+      countdown.textContent = `باقي ${days} يوم و${hours} ساعة و${minutes} دقيقة على فرحتنا`;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 60000);
+
     document.getElementById('rsvp-form').addEventListener('submit', function (event) {
       event.preventDefault();
       document.getElementById('thanks').hidden = false;
